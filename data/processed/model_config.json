@@ -1,0 +1,13 @@
+{
+    "sequence_length": 20,
+    "vocabulary_size": 10556,
+    "embedding_dim": 128,
+    "lstm_units": 256,
+    "dropout_rate": 0.2,
+    "special_tokens": {
+        "padding": "<PAD>",
+        "unknown": "<UNK>",
+        "start": "<START>",
+        "end": "<END>"
+    }
+}
