@@ -1,0 +1,19 @@
+cat > .gitignore <<'EOF'
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.env.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+EOF
