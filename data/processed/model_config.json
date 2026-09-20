@@ -1,13 +1,28 @@
 {
-    "sequence_length": 20,
-    "vocabulary_size": 10556,
-    "embedding_dim": 128,
-    "lstm_units": 256,
-    "dropout_rate": 0.2,
-    "special_tokens": {
-        "padding": "<PAD>",
-        "unknown": "<UNK>",
-        "start": "<START>",
-        "end": "<END>"
-    }
+  "sequence_length": 20,
+  "vocabulary_size": 3282,
+  "embedding_dim": 64,
+  "lstm_units": 64,
+  "dropout_rate": 0.25,
+  "token_pattern": "[a-z]+(?:'[a-z]+)?",
+  "lowercase": true,
+  "unicode_normalization": "NFKC",
+  "special_tokens": {
+    "padding": "<PAD>",
+    "unknown": "<UNK>",
+    "start": "<START>",
+    "end": "<END>"
+  },
+  "split": {
+    "unit": "unique sentence",
+    "train": 0.8,
+    "validation": 0.1,
+    "test": 0.1,
+    "random_seed": 42
+  },
+  "minimum_train_word_frequency": 4,
+  "sequence_method": "left-padded preceding context, one immediate-next-token target per sentence token",
+  "test_loss": 5.122102737426758,
+  "test_accuracy": 0.17295712232589722,
+  "epochs_ran": 12
 }
